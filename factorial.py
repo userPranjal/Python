@@ -6,13 +6,11 @@ def Factorial(num):
 
     return fact
 
-
 def main():
     no = int(input("Enter a number: "))
 
     result = Factorial(no)
     print("Factorial of", no, "is:", result)
-
 
 if __name__ == "__main__":
     main()
