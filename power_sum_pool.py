@@ -1,3 +1,6 @@
+# Calculates 1^5 + 2^5 + 3^5 + 4^5 + ......+N^5 for multiple values of N simultaneiusly using pool 
+#  input = [1000000,2000000,3000000,4000000]
+
 import multiprocessing
 import time
 
