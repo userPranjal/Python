@@ -4,7 +4,7 @@ import os
 def Factorial(num):
     result = 1
     for i in range(1, num + 1):
-        result *= i
+        result = result * i
 
     print("Process ID:", os.getpid())
     return result
