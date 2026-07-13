@@ -1,4 +1,4 @@
-from multiprocessing import Pool
+import multiprocessing
 
 def SquaresSum(n):
     Sum = 0
@@ -9,15 +9,15 @@ def SquaresSum(n):
 def main():
     Data = [1000000, 2000000, 3000000, 4000000]
 
-    pool = Pool()
+    pobj = multiprocessing.Pool()
 
-    result = pool.map(SquaresSum, Data)
+    Result = pobj.map(SquaresSum, Data)
 
-    pool.close()
-    pool.join()
+    pobj.close()
+    pobj.join()
 
     print("Input : ",Data)
-    print("Sum of Squares :",result)
+    print("Sum of Squares :",Result)
 
 if __name__ == "__main__":
     main()
