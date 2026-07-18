@@ -1,4 +1,5 @@
 class BookStore:
+    
     NoOfBooks = 0
 
     def __init__(self, Name, Author):
