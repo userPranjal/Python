@@ -43,6 +43,7 @@ print("Prime:", Nobj1.ChkPrime())
 print("Perfect:", Nobj1.ChkPerfect())
 Nobj1.Factors()
 print("Sum of Factors:", Nobj1.SumFactors())
+
 print()
 
 Nobj2 = Numbers(int(input("Enter First Number: ")))
