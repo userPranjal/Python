@@ -22,6 +22,7 @@ Obj2 = Demo(51, 101)
 
 Obj1.Fun()
 Obj2.Fun()
+
 Obj1.Gun()
 Obj2.Gun()
     
