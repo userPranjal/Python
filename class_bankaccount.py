@@ -33,16 +33,15 @@ class BankAccount:
         print("Interest : ",interest)
 
 Bobj1 = BankAccount("Pranjal", 7000)
-
 Bobj1.Display()
 Bobj1.Deposit()
 Bobj1.Withdraw()
 Bobj1.CalculateInterest()
+
 print()
 print()
 
 Bobj2 = BankAccount("Sanika", 988.80)
-
 Bobj2.Display()
 Bobj2.Deposit()
 Bobj2.Withdraw()
