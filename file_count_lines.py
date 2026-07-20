@@ -1,14 +1,21 @@
 # Program to count the number of lines in a file
 
-filename = input("Enter the file name: ")
+def main():
+    filename = input("Enter file name: ")
 
-try:
-    with open(filename, "r") as file:
+    try:
+        file = open(filename, "r")
+
         count = 0
         for line in file:
-            count += 1
+            count = count + 1
 
-    print("Total number of lines in", filename, ":",count)
+        file.close()
 
-except FileNotFoundError:
-    print("File not found")
+        print("Total number of lines in", filename, ":", count)
+
+    except FileNotFoundError:
+        print("File not found")
+
+if __name__ == "__main__":
+    main()
