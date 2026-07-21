@@ -1,3 +1,5 @@
+# Checks whether file exists in the current directory or not 
+
 import os
 
 def main():
