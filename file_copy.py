@@ -12,7 +12,7 @@ def main():
         file1.close()
         file2.close()
 
-        print("Contents copied successfully...")
+        print("\nContents of", source, "copied into", destination)
 
         file2 = open(destination, "r")
         print("\nContents of", destination, "are:")
