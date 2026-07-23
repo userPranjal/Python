@@ -1,3 +1,7 @@
+# Hourly File Backup Automation
+# Copies a file every hour, adds a timestamp to the
+# backup filename, and logs the backup details.
+
 import schedule
 import time
 import shutil
