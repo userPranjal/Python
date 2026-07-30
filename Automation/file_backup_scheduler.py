@@ -36,9 +36,7 @@ def main():
     source = input("Enter source file path : ")
     destination = input("Enter destination directory path : ")
 
-    #schedule.every().hour.do(BackupFile, source, destination)
-
-    schedule.every(1).seconds.do(BackupFile, source, destination)
+    schedule.every().hour.do(BackupFile, source, destination)
 
     while True:
         schedule.run_pending()
