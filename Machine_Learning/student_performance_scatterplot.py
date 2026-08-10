@@ -4,14 +4,29 @@ import pandas as pd
 def main():
     df = pd.read_csv("student_performance_ml.csv")
 
+    PassStudents = df[df["FinalResult"] == 1]
+    FailStudents = df[df["FinalResult"] == 0]
+
     plt.scatter(
-        df['StudyHours'],
-        df['PreviousScore'],
+        PassStudents['StudyHours'],
+        PassStudents['PreviousScore'],
         marker = "o",
         alpha=0.8,
         edgecolors="black",
         linewidths=1,
-        label = "Students"
+        color="darkgreen",
+        label = "Pass"
+    )
+
+    plt.scatter(
+            FailStudents['StudyHours'],
+            FailStudents['PreviousScore'],
+            marker = "o",
+            alpha=0.8,
+            edgecolors="black",
+            linewidths=1,
+            color="darkred",
+            label = "Fail"
     )
 
     plt.title("Scatter Plot")
